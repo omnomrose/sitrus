@@ -1,0 +1,55 @@
+/* HEADER CSS */
+.header {
+    width: 100%;
+    height: 106px;
+    border-bottom: solid 2px #FF9505;
+}
+
+.brand {
+    font-family: 'Akira Expanded';
+    font-size: 40px;
+    color: white;
+    margin-bottom: 18px;
+    padding-left: 35px;
+}
+
+.headerContent {
+    width: 1920px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 602px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.logo > img {
+    margin-bottom: 18px;
+}
+
+.navigation {
+    width: 1126px;
+    height: 106px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 40px;
+}
+
+.navLink {
+    font-family: 'Akira Expanded';
+    font-size: 16px;
+}
+
+.navItem {
+    margin-bottom: 32px;
+}
+
+a {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+/* HEADER CSS ENDS */
