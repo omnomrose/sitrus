@@ -131,33 +131,33 @@ a {
 
 .button1:hover {
     background: #FF9505;
+    color: black;
     border-radius: 8px;
     border: solid 2px black;
     height: 66px;
     width: 217px;
-    color: white;
     font-family: 'Akira Expanded';
     font-size: 16px;
 }
 
 .button2 {
     background: #FF9505;
+    color: white;
     border-radius: 8px;
     border: solid 2px black;
     height: 66px;
     width: 217px;
-    color: white;
     font-family: 'Akira Expanded';
     font-size: 16px;
 }
 
 .button2:hover {
     background: black;
+    color: #FF9505;
     border-radius: 8px;
     border: none;
     height: 66px;
     width: 217px;
-    color: white;
     font-family: 'Akira Expanded';
     font-size: 16px;
 }
