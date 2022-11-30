@@ -1,0 +1,97 @@
+/* HEADER CSS */
+.header {
+    width: 100%;
+    height: 106px;
+    max-height: 106px;
+    border-bottom: solid 2px #FF9505;
+    position: sticky;
+}
+
+.brand {
+    font-family: 'Akira Expanded';
+    font-size: 40px;
+    color: white;
+    margin-bottom: 18px;
+    padding-left: 35px;
+}
+
+.headerContent {
+    width: 1920px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 602px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.logoImage {
+    margin-bottom: 11px;
+}
+
+.navigation {
+    width: 1126px;
+    height: 106px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 40px;
+}
+
+.navLink {
+    font-family: 'Akira Expanded';
+    font-size: 16px;
+}
+
+.navLink:hover {
+    color: #FF9505;
+}
+
+.navItem {
+    margin-bottom: 32px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+/* HEADER CSS ENDS */
+
+/*AARON CSS START*/
+
+.intro{
+    display: grid;
+        width: 100vw;
+        height: 80vh;
+        max-height: 80vh;
+        max-width: 100vw;
+        grid-template:
+        "p p i" auto
+        "p p i" 2ch
+        "p p i" 1em / 33% 20px 1fr
+        ;
+    gap: 2%;
+    margin: 0px;
+}
+
+.portrait {
+    grid-area: p;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.info {
+    grid-area: i;
+    color: white;
+    align-self: center;
+    width: 100%;
+}
+
+p {
+    max-width: 60%;
+}
+
+/*AARON CCS END*/
