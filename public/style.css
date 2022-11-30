@@ -2,7 +2,9 @@
 .header {
     width: 100%;
     height: 106px;
+    max-height: 106px;
     border-bottom: solid 2px #FF9505;
+    position: sticky;
 }
 
 .brand {
@@ -53,3 +55,254 @@ a {
 }
 
 /* HEADER CSS ENDS */
+/* FIRST SECTION CSS */
+.firstSection {
+    display: grid;
+    width: 100%;
+    grid-template: 
+    "a b" 1fr
+    ;
+    width: 100%;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+    height: 811px;
+}
+
+.firstSectionImage {
+    grid-area: a;
+    grid-column: 1;
+}
+
+.designImage {
+    width: 588.79;
+    height: 599.86;
+    padding-top: 56px;
+    padding-left: 138px;
+}
+
+.firstSectionContent {
+
+    /*height: 811px;*/
+    background-color: #FF9505;
+    grid-area: b;
+    grid-column: 2;
+}
+
+.solutionsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-left: 56px;
+}
+
+.solutionsTitle {
+    font-family: 'Akira Expanded';
+    font-size: 40px;
+}
+
+.solutionsSubTitle {
+    font-family: 'Poppins';
+    font-size: 40px;
+}
+
+.solutionsBodyText {
+    width: 608px;
+    font-family: 'Poppins';
+    font-size: 24px;
+    padding: 74px 0px 64px 0px;
+}
+
+.button1 {
+    background: black;
+    border-radius: 8px;
+    border: none;
+    height: 66px;
+    width: 217px;
+    color: white;
+    font-family: 'Akira Expanded';
+    font-size: 16px;
+    margin-right: 24px;
+}
+
+.button1:hover {
+    background: #FF9505;
+    border-radius: 8px;
+    border: solid 2px black;
+    height: 66px;
+    width: 217px;
+    color: white;
+    font-family: 'Akira Expanded';
+    font-size: 16px;
+}
+
+.button2 {
+    background: #FF9505;
+    border-radius: 8px;
+    border: solid 2px black;
+    height: 66px;
+    width: 217px;
+    color: white;
+    font-family: 'Akira Expanded';
+    font-size: 16px;
+}
+
+.button2:hover {
+    background: black;
+    border-radius: 8px;
+    border: none;
+    height: 66px;
+    width: 217px;
+    color: white;
+    font-family: 'Akira Expanded';
+    font-size: 16px;
+}
+
+.trustedByContainer {
+    width: 100%;
+    height: 216px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trustedByTitle {
+    font-family: 'Akira Expanded';
+    font-size: 32px;
+    padding: 32px 0px 0px 0px;
+}
+
+.trustedImages {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+   /* justify-content: space-evenly;*/
+    height: 100%;
+    padding: 51px 0px 0px 0px;
+
+}
+
+.teamContainer {
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trustedLogo {
+    padding: 0px 50px 0px 50px;   
+}
+
+.teamTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Akira Expanded';
+    color: white;
+    font-size: 40px;
+    padding: 72px 0px 0px 0px;
+}
+
+.teamSubTitle {
+    font-family: 'Poppins';
+    color: white;
+    font-size: 24px;
+    padding: 10px 0px 0px 0px;
+    width: 1328px;
+}
+
+.teamCards {
+    padding: 61px 0px 0px 0px;
+    display: grid;
+    grid-template:  
+    "a a a b b b" 430px
+    "c c d d e e" 618px
+    ;
+    width: 1328px;
+    gap: 14px;
+}
+
+.giovana {
+    grid-area: a;
+    background-color: #FF9505;
+}
+
+.corey {
+    grid-area: b;
+    background-color: #FF9505;
+}
+
+.aaron {
+    grid-area: c;
+    background-color: #FF9505;
+}
+
+.mariela {
+    grid-area: d;
+    background-color: #FF9505;
+}
+
+.rose {
+    grid-area: e;
+    background-color: #FF9505;
+}
+
+.teamNameTop {
+    padding: 15px 0px 0px 45px;
+    font-family: 'Akira Expanded';
+    font-size: 24px;
+}
+
+.teamBioTop {
+    padding: 6px 0px 0px 45px;
+    width: 90%;
+    font-family: 'Poppins';
+    font-weight: light;
+    font-size: 14px;
+}
+
+.teamNameBottom {
+    padding: 25px 0px 0px 45px;
+    font-family: 'Akira Expanded';
+    font-size: 24px;
+}
+
+.teamBioBottom {
+    padding: 17px 0px 0px 45px;
+    width: 90%;
+    font-family: 'Poppins';
+    font-weight: light;
+    font-size: 14px;
+    width: 363px;
+}
+
+/* DESKTOP - SMALLER SCREEN SIZE */
+
+@media only screen and (max-width: 1600px) {
+    .headerContent {
+        width: 1537px;
+    }
+    .logo {
+        padding-left: 67px;
+    }
+    .designImage {
+        padding-top: 41px;
+        padding-left: 121px;
+    }
+    .solutionsBodyText {
+        width: 608px;
+        font-family: 'Poppins';
+        font-size: 20px;
+        padding-top: 44px;
+        padding: 44px 0px 34px 0px;
+    }
+    .solutionsTitle {
+        font-size: 40px;
+    }
+    
+    .solutionsSubTitle {
+        font-size: 40px;
+    }
+
+  }
