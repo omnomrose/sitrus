@@ -229,6 +229,7 @@ p {
 .lofi-drawing-container {
     height: 470px;
     width: 470px;
+    margin-left: 150px;
     transition-duration: 1s;
 }
 
@@ -518,15 +519,25 @@ p {
 
 .footer-info {
     font-family: 'Poppins';
-    padding-top: 24px;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    justify-content: space-evenly;
+    margin-left: 2%;
+    font-size: 12px;
 }
 
-#copyright {
-    font-size: 11px;
-    margin-left: 7%;
-    padding: 50px;
-    display: flex;
-    justify-content: center;
+.footer-copyright {
+    grid-area: 2;
+}
+
+.footer-privacy {
+    grid-area: 1;
+}
+
+.footer-terms {
+    grid-area: 3;
+    padding: 0px;
 }
 
 /* FOOTER CSS ENDS */
@@ -1086,15 +1097,25 @@ p {
 
 .footer-info {
     font-family: 'Poppins';
-    padding-top: 24px;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    justify-content: space-around;
+    margin-left: 2%;
+    font-size: 8px;
 }
 
-#copyright {
-    font-size: 11px;
-    margin-left: 7%;
-    display: flex;
-    justify-content: center;
-    padding: 50px;
+.footer-copyright {
+    grid-area: 2;
+}
+
+.footer-privacy {
+    grid-area: 1;
+}
+
+.footer-terms {
+    grid-area: 3;
+    padding: 0px;
 }
 
 /* FOOTER CSS ENDS */
