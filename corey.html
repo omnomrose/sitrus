@@ -11,6 +11,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./public/corey-style.css">
+        <script src="./public/Script/corey_script.js"></script> 
     </head>
     <body style="display: grid; justify-content: center; align-items: center; background-color:black; margin:0;">
         <div class="header">
@@ -40,6 +41,17 @@
                         <a href="" class="navLink">Careers</a>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="mobileHeader">
+            <div class="mobileLogo">
+                <img class="mobileSitrus" src="./public/assets/logo.png">
+            </div>
+            <div class="mobileBrand">
+                <p>SITRUS</p>
+            </div>
+            <div class="mobileHamburger">
+                <img class="mobileHamburgerImg" src="./public/assets/hamburger.png">
             </div>
         </div>
 <!--INTRO Section-->
@@ -77,7 +89,7 @@
                         <p>e - COMMERCE</p>
                     </div>
                 </div>
-                <div class="serviceBoxThree seoSem serviceBoxSection1">
+                <div class="serviceBoxThree frontEndDev serviceBoxSection1">
                     <div class="serviceBoxOneInner">
                         <p>Front End Development</p>
                     </div>
@@ -92,7 +104,7 @@
         </div>
         <div class="sectionSpacer1"></div>
 <!--ECOM Section-->
-        <div class="eComSection">
+        <div id="eComSection" class="eComSection">
             <div class="ecomContainer">
                 <div class="eComTitle">
                     <p>E-Commerce</p>
@@ -163,7 +175,7 @@
         </div>
         <div class="sectionSpacer2"></div>
 <!--EMAIL MARKETING Section-->
-        <div class="emailMarketingSection">
+        <div id="emailMarketingSection" class="emailMarketingSection">
             <div class="emailMarketingContainer">
                 <div class="emailMarketingTitle">
                     <p>Email Marketing</p>
@@ -227,7 +239,7 @@
         </div>
         <div class="sectionSpacer3"></div>
 <!--WEB DEV Section-->
-        <div class="webDevSection">
+        <div id="webDevSection" class="webDevSection">
             <div class="webDevContainer">
                 <div class="webDevTitle">
                     <p>Web Development & Design</p>
@@ -251,16 +263,28 @@
                     <img class="webDevImageBig" src="./public/assets/boxTerra1Big.png"/>
                 </div>
                 <div class="boxTerra1 webDevImageCard">
-                    <img class="webDebImage" src="./public/assets/boxTerra1.png">
+                    <img class="webDebImage boxTerra1" src="./public/assets/boxTerra1.png">
                 </div>
                 <div class="boxTerra2 webDevImageCard">
-                    <img class="webDebImage" src="./public/assets/boxTerra2.png">
+                    <img class="webDebImage boxTerra2" src="./public/assets/boxTerra2.png">
                 </div>
                 <div class="indoorNow1 webDevImageCard">
-                    <img class="webDebImage" src="./public/assets/indoorNow1.png">
+                    <img class="webDebImage indoorNow1" src="./public/assets/indoorNow1.png">
                 </div>
                 <div class="indoorNow2 webDevImageCard">
-                    <img class="webDebImage" src="./public/assets/indoorNow2.png">
+                    <img class="webDebImage indoorNow2" src="./public/assets/indoorNow2.png">
+                </div>
+                <div class="mobileButtons upperLeftB">
+                    <button class="boxTerra1Button mobileButton" onclick="">BoxTerra</button>
+                </div>
+                <div class="mobileButtons upperRightB">
+                    <button class="boxTerra2Button mobileButton" onclick="">BoxTerra</button>
+                </div>
+                <div class="mobileButtons lowerLeftB">
+                    <button class="indoorNow1Button mobileButton" onclick="">Indoor Now</button>
+                </div>
+                <div class="mobileButtons lowerRightB">
+                    <button class="indoorNow2Button mobileButton" onclick="">Indoor Now</button>
                 </div>
             </div>
         </div>
@@ -276,7 +300,7 @@
                         <p>These days getting your brand seen and heard can bea difficult process.<br><br>You've got your product and your sitebut you're lacking one major thing: customers.<br><br>
                             To get your brand seen and heard can be a difficult task these days; however, with the right optimization and
                              online advertising channels you can find the audience and the profits they bring with them. <br><br>
-                             Get your storefront center stage in the eyes of relevante-shoppers by maximizing organic and paid-for traffic.</p>
+                             <b>Get your storefront center stage in the eyes of relevant-shoppers by maximizing organic and paid-for traffic.</b></p>
                     </div>
                 </div>
                 <div class="addServiceCard1">

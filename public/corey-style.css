@@ -66,6 +66,14 @@ a {
 
 /* Header Ends */
 
+/* Mobile Header */
+
+.mobileHeader {
+    display: none;
+}
+
+/* Mobile Header Ends */
+
 .introSection {
     display: grid;
     grid-template: 
@@ -450,6 +458,7 @@ a {
 .emailMarketingCardDesc ul {
     padding-right: 15px;
 }
+
 .emailMarketingCard1 {
     grid-area: d1;
 }
@@ -467,6 +476,8 @@ a {
 }
 
 
+
+
 /* Web Dev Section */
 
 .sectionSpacer3 {
@@ -481,7 +492,7 @@ a {
     z-index: 10;
     position: sticky;
     top: 0px;
-    background-color: black;
+    background-color: #FF9505;
     justify-content: center;
 }
 
@@ -503,20 +514,20 @@ a {
 
 .webDevTitle {
     grid-area: a2;
-    background-color: #FF9505;
-    color: black;
+    background-color: black;
+    color: white;
     height: 83px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: clamp(22px, 1.5vw, 30px);
     font-family: 'Akira Expanded';
-    box-shadow: 4px 4px 4px gray;
+    box-shadow: 4px 4px 4px black;
 }
 
 .webDevCardTitle {
     height: 20%;
-    background: #FF9505;
+    background: black;
     font-size: 18px;
     color: black;
     width: 100%;
@@ -532,7 +543,7 @@ a {
 .webDevDescContainer {
     grid-area: b2;
     overflow: hidden;
-    box-shadow: 4px 4px 4px gray;
+    box-shadow: 4px 4px 4px black;
 }
 
 .webDevDescription {
@@ -551,37 +562,38 @@ a {
 .webDevImageBig {
     width: 100%;
     height: 100%;
-    box-shadow: 4px 4px 4px gray;
+    box-shadow: 4px 4px 4px black;
+    object-fit: none;
 }
 
 
 .webDevImage {
     width: 100%;
     height: 100%;
-    box-shadow: 4px 4px 4px gray;
+    box-shadow: 4px 4px 4px black;
 }
 
 .boxTerra1 {
    grid-area: d2;
    overflow: hidden;
-   box-shadow: 5px 5px 5px gray;
+   box-shadow: 5px 5px 5px black;
 }
 .boxTerra2 {
     grid-area: e2;
     overflow: hidden;
-    box-shadow: 5px 5px 5px gray;
+    box-shadow: 5px 5px 5px black;
 }
 
 .indoorNow1 {
     grid-area: f2;
     overflow: hidden;
-    box-shadow: 5px 5px 5px gray;
+    box-shadow: 5px 5px 5px black;
 }
 
 .indoorNow2 {
     grid-area: g2;
     overflow: hidden;
-    box-shadow: 5px 5px 5px gray;
+    box-shadow: 5px 5px 5px black;
 }
 
 .sectionSpacer4 {
@@ -592,6 +604,26 @@ a {
 
 .webDevImageCard:hover {
     box-shadow: 5px 5px 5px white;
+}
+
+.mobileButtons {
+    display: none;
+}
+
+.upperLeftB {
+    grid-area: d2;
+}
+
+.upperRightB {
+    grid-area: e2;
+}
+
+.lowerLeftB {
+    grid-area: f2;
+}
+
+.lowerRightB {
+    grid-area: g2;
 }
 
 /* ADD SERVICE */
@@ -727,9 +759,14 @@ a {
         grid-auto-columns: minmax(0, 1fr);
         grid-auto-flow: column;
         height: 100vh;
-        top: 110px;
+        top: 0px;
         position: relative;
     }
+
+    .coreyImageContainer {
+        padding-top: 10vh;
+    }
+
     .bioSection {
         display: grid;
         grid-template: 
@@ -744,6 +781,7 @@ a {
     }
     .bioContainer {
         width: 230%;
+        position: relative;
     }
     
     .servicesSection1 {
@@ -752,7 +790,7 @@ a {
         justify-content: center;
         top: 0;
         position: relative;
-        padding-bottom: 90px;
+        padding-bottom: 6%;
     }
     .servicesSectionContainer {
         display: grid;
@@ -775,12 +813,24 @@ a {
         display: none;
     }
 
+    .serviceBoxTwo {
+        justify-content: center;
+    }
+
+    .serviceBoxThree {
+        justify-content: center;
+    }
+
+    .serviceBoxFour {
+        justify-content: center;
+    }
+
     .serviceBoxOneInner{
         height: 35vh;
     }
 
     .eComSection {
-        height: 120%;
+        height: 100%;
         width: 100vw;
         top: 0px;
         background-color: #FF9505;
@@ -792,6 +842,7 @@ a {
         width: 59.5vw;
         margin: auto;
         padding-top: 8%;
+        padding-bottom: 8%;
         display: grid;
         grid-template: 
         "a1 a1" 10vh
@@ -805,7 +856,7 @@ a {
         grid-auto-rows: 35vh;
         grid-auto-flow: column;
         min-width: 600px;
-        height: 100%;
+        height: auto;
     }
 
     .addService {
@@ -819,32 +870,339 @@ a {
 
     .emailMarketingContainer {
         padding-top: 0px;
+        width: 59.5vw;
+        margin: auto;
+        padding-top: 8%;
+        padding-bottom: 8%;
+        display: grid;
+        grid-template: 
+        "a1 a1" 10vh
+        "b1 b1" 30vh
+        "c1 c1" 30vh
+        "d1 e1" 36vh
+        "f1 g1" 36vh
+        ;
+        gap: 10px;
+        grid-auto-columns: minmax(0, 1fr);
+        grid-auto-flow: column;
+        min-width: 600px;
     }
 
     .emailMarketingSection {
-        height: 967px;
+        height: 100%;
         width: 100vw;
         top: 0px;
         background-color: black;
         justify-content: center;
         position: relative;
     }
+
     .webDevSection {
-        height: 967px;
-        width: 100vw;
-        top: 0px;
-        background-color: black;
+        height: auto;
         justify-content: center;
         position: relative;
     }
+
+    .webDevImageBig {
+        object-fit: cover;
+    }
+
+    .webDevContainer {
+        padding-top: 8%;
+        width: 59.5vw;
+        margin: auto;
+        padding-top: 8%;
+        display: grid;
+        grid-template: 
+        "a2 a2" 10vh
+        "b2 b2" 45vh
+        "c2 c2" auto
+        "d2 e2" 20vh
+        "f2 g2" 20vh
+        ;
+        gap: 10px;
+        grid-auto-columns: minmax(0, 1fr);
+        grid-auto-flow: column;
+        min-width: 600px;
+        padding: 8% 0px 8% 0;
+    }
+
+    .webDevDescription {
+        height: 100%;
+        font-size: clamp(14px, .9vw, 18px);
+    }
+
+    .webDevTitle p {
+        text-align: center;
+    }
+
+    .webDevImageCard {
+        object-fit: cover;
+    }
+
+    .webDebImage {
+        display: none;
+    }
+
+    .boxTerra1 {
+        background-image: url("./assets/boxTerra1Alt.png");
+        background-position: center;
+    }
+
+    .boxTerra2 {
+        background-image: url("./assets/boxTerra2Alt.png");
+        background-position: center;
+    }
+
+    .indoorNow1 {
+        background-image: url("./assets/indoorNow1Alt.png");
+        background-position: center;
+    }
+
+    .indoorNow2 {
+        background-image: url("./assets/indoorNow2Alt.png");
+        background-position: center;
+    }
+
+    .addService {
+        height: auto;
+        width: 100vw;
+        z-index: 10;
+        position: sticky;
+        top: 0px;
+        background-color: black;
+        justify-content: center;
+    }
+    
+    .addServiceContainer {
+        width: 59.5vw;
+        margin: auto;
+        padding-top: 8%;
+        padding-bottom: 8%;
+        display: grid;
+        grid-template: 
+        "a3 a3" 400px
+        "b3 c3" 350px
+        "d3 e3" 350px
+        ;
+        gap: 20px;
+        min-width: 600px;
+    }
+
+    .addServiceInfo {
+        height: 100%;
+    }
+
+    .addServiceCardDesc {
+        height: 80%;
+    }
+
     .sectionSpacer1 {
-        height: 0;
+        display: none;
     }
     .sectionSpacer2 {
-        z-index: 8;
-        position: relative;
-        height: 0;
+        display: none;
+    }
+    .sectionSpacer3 {
+        display: none;
+    }
+    .sectionSpacer4 {
+        display: none;
     }
 
 
+}
+
+
+@media only screen and (max-width: 600px) {
+    .mobileHeader {
+        display: grid;
+        grid-template: 
+        "m1 m2 m3" auto
+        ;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        height: 20vw;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: black;
+        border-bottom: 2px solid #FF9505;
+    }
+
+    .mobileSitrus {
+        width: 10vw;
+        padding-left: 9vw;
+    }
+
+    .mobileBrand {
+        font-family: 'Akira Expanded';
+        font-size: 28px;
+        color: white;
+    }
+
+    .mobileHamburger {
+        padding-right: 9vw; 
+    }
+
+    .mobileHamburgerImg {
+         width: 10vw;
+    }
+
+    .coreyImageContainer {
+        display: none;
+    }
+
+    .introSection {
+        background-image: url("./assets/CoreyMobile.png");
+        object-fit: contain;
+        height: 100vh; 
+
+    }
+    .bioContainer {
+        top: 0;
+        padding-left: 0;
+        margin-left: 12vw;
+    }
+    
+    .bioSection {
+        top: -12vh;
+    }
+
+    .nameContainer {
+        width: 85vw;
+        padding-left: 8vw;
+        justify-content: unset;
+    }
+
+    .InnerTitleContainer {
+        background-color: black;
+        margin-top: 50px;
+    }
+
+    .servicesSection1 {
+        margin: 8%;
+    }
+
+    .servicesSectionContainer {
+        padding: 0px;
+        margin: 0px;
+        width: 84vw;
+    }
+
+    .serviceBoxOneInner {
+        width: 100%;
+    }
+
+    .ecomContainer {
+        grid-template: 
+        "a1" 10vh
+        "b1" auto
+        "c1" auto
+        "d1" auto
+        "e1" auto
+        "f1" auto
+        "g1" auto
+        ;
+        min-width: 380px;
+        gap: 40px;
+    
+    }
+
+    .ecomDescription {
+        padding: 2.5vw 2vw 2.5vw 3vw;
+        font-size: clamp(16px, 1vw, 16px);
+    }
+
+    .eComCardDesc {
+        font-size: clamp(16px, 1vw, 16px);
+    }
+    
+    .emailMarketingContainer {
+        grid-template: 
+        "a1" 10vh
+        "b1" auto
+        "c1" auto
+        "d1" auto
+        "e1" auto
+        "f1" auto
+        "g1" auto
+        ;
+        min-width: 380px;
+        gap: 40px;
+    }
+
+    .emailMarketingDescription {
+        padding: 2.5vw 3vw 2.5vw 3vw;
+        font-size: clamp(16px, 1vw, 16px);
+    }
+
+    .emailMarketingTitle {
+        text-align: center;
+    }
+
+    .emailMarketingCardDesc {
+        font-size: clamp(16px, 1vw, 16px);
+    }
+    
+    .webDevContainer {
+        grid-template: 
+        "a2 a2" auto
+        "b2 b2" auto
+        "c2 c2" auto
+        "d2 e2" auto
+        "f2 g2" auto
+        ;
+        min-width: 380px;
+        gap: 40px;
+    }
+
+    .webDevImageCard {
+        display: none;
+    }
+
+    .webDevDescription {
+        padding: 2.5vw 3vw 2.5vw 3vw;
+        font-size: clamp(16px, .9vw, 18px);
+    }
+    
+    .addServiceContainer {
+        grid-template: 
+        "a3" auto
+        "b3" auto
+        "c3" auto
+        "d3" auto
+        "e3" auto
+        ;
+        min-width: 380px;
+    }
+
+    .mobileButtons {
+        display: block;
+    }
+
+    .mobileButtons button {
+        width: 100%;
+        font-size: 12px;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        font-family: 'akira expanded';
+        letter-spacing: 3px;
+        box-shadow: 5px 5px 5px black;
+        background-color: white;
+    }
+
+    .addServiceInfo p {
+        font-size: clamp(16px, .9vw, 18px);
+        padding: 2.5vw 3vw 2.5vw 3vw;
+    }
+
+    .addServiceCardDesc ul {
+        font-size: clamp(16px, 1vw, 16px);
+    }
+    .header {
+        display: none;
+    }
 }
