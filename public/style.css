@@ -268,7 +268,7 @@ a {
     display: grid;
     grid-template:
     "a1" 23vh
-    "b1" 900px
+    "b1" 155vh
     ;
     justify-content: center;
 }
