@@ -145,7 +145,7 @@ a {
     grid-template: 
     "a b" 100%
     ;
-    width: 100%;
+    width: 100vw;
     grid-auto-columns: minmax(0, 1fr);
     grid-auto-flow: column;
     height: 85vh;
@@ -239,7 +239,7 @@ a {
 }
 
 .trustedByContainer {
-    width: 100%;
+    width: 100vw;
     height: 30vh;
     background-color: white;
     display: flex;
@@ -250,7 +250,7 @@ a {
 .trustedByTitle {
     font-family: 'Akira Expanded';
     font-size: 32px;
-    padding: 32px 0px 0px 0px;
+    padding: 9vh 0px 0px 0px;
 }
 
 .trustedImages {
@@ -264,7 +264,8 @@ a {
 }
 
 .teamContainer {
-    height: 150vh;
+    height: 180vh;
+    width: 100vw;
     display: grid;
     grid-template:
     "a1" 23vh
@@ -296,18 +297,19 @@ a {
     color: white;
     font-size: 24px;
     padding: 10px 0px 0px 0px;
-    width: 1328px;
+    width: 85%;
+    margin: auto;
 }
 
 .teamCards {
     grid-area: b1;
-    padding: 120px 0px 0px 0px;
     display: grid;
     grid-template:  
     "a a a b b b" 54vh
     "c c d d e e" 74vh
     ;
-    width: 85vw;
+    margin: auto;
+    width: 85%;
     gap: 24px;
     grid-auto-columns: minmax(0, 1fr);
     grid-auto-flow: column;
@@ -446,6 +448,7 @@ hr{
     flex-direction: column;
     align-items: center;
     gap: 50px;
+    width: 100vw;
 }
 
 .uniqueHeader{
@@ -535,6 +538,11 @@ a {
     flex-direction: column;
     justify-content: right;
     padding-left: 4%;
+}
+
+.whatWeDoImage {
+    width: 100%;
+    padding-bottom: 10%;
 }
 
 /* DESKTOP - SMALLER SCREEN SIZE */
