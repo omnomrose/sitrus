@@ -330,9 +330,21 @@ a {
     background-color: #FF9505;
 }
 
+.giovana:hover {
+    cursor: pointer;
+    transition: 400ms ease-in-out;
+    transform: scale(1.05);
+}
+
 .corey {
     grid-area: b;
     background-color: #FF9505;
+}
+
+.corey:hover {
+    cursor: pointer;
+    transition: 400ms ease-in-out;
+    transform: scale(1.05);
 }
 
 .aaron {
@@ -340,14 +352,32 @@ a {
     background-color: #FF9505;
 }
 
+.aaron:hover{
+    cursor: pointer;
+    transition: 400ms ease-in-out;
+    transform: scale(1.05);
+}
+
 .mariela {
     grid-area: d;
     background-color: #FF9505;
 }
 
+.mariela:hover{
+    cursor: pointer;
+    transition: 400ms ease-in-out;
+    transform: scale(1.05);
+}
+
 .rose {
     grid-area: e;
     background-color: #FF9505;
+}
+
+.rose:hover{
+    cursor: pointer;
+    transition: 400ms ease-in-out;
+    transform: scale(1.05);
 }
 
 .teamNameTop {
