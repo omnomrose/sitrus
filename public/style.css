@@ -264,11 +264,11 @@ a {
 }
 
 .teamContainer {
-    height: 100%;
+    height: 150vh;
     display: grid;
     grid-template:
-    "a1" 23vh
-    "b1" 600px
+    "a1" auto
+    "b1" auto
     ;
     justify-content: center;
 }
