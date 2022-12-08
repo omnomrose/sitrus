@@ -1,0 +1,1158 @@
+@import url('https://fonts.cdnfonts.com/css/akira-expanded');
+
+body, h1, h2, h3, h4, p, ul, li, figure, img {
+    margin: 0;
+	padding: 0;
+	border: 0;
+    font-size: 10px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #010B14;
+}
+
+/* HEADER BEGINS HERE */
+.header {
+    animation: 0.5s ease-out 0s 1 slideInTop;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100vw;
+    max-width: 100vw;
+    height: 100px;
+    background-color: black;
+    border-bottom: solid 2px #FF9505;
+}
+
+.brand {
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 18px;
+    padding-left: 35px;
+    -webkit-transition: color 0.3s, font-size 0.3s;
+    transition: color 0.3s, font-size 0.3s;
+}
+
+.brand:hover {
+    color: #FF9505;
+    font-size: 45px;
+    transition-duration: 300ms;
+}
+
+.headerContent {
+    width: 100vw;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 602px;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 2%;
+}
+
+.logoImage {
+    margin-bottom: 11px;
+}
+
+.navigation {
+    width: 1126px;
+    height: 106px;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    gap: 40px;
+    margin-right: 2%;
+}
+
+.navLink {
+    font-family: 'Akira Expanded', sans-serif;
+    -webkit-transition: color 0.3s, font-size 0.3s;
+    transition: color 0.3s, font-size 0.3s;
+    font-size: 16px;
+}
+
+.navLink:hover {
+    color: #FF9505;
+    font-size: 18px;
+    transition-duration: 300ms;
+}
+
+.navItem {
+    margin-bottom: 32px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu {
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+}
+/* HEADER ENDS HERE */
+
+
+.gb-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+.gb-section {
+    display: flex;
+    width: 100%;
+    padding: 0px 40px;
+    box-sizing: border-box;
+}
+
+.gb-section-title {
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 24px;
+    padding: 8px 0px;
+}
+
+
+/* PRESENTATION BEGINS HERE */
+.gb-presentation {
+    flex-direction: row;
+    height: 80vh;
+    padding-left: 168px;
+}
+
+.gb-presentation-text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: #FDFFFC;
+}
+
+.gb-presentation-text h1 {
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 12px;
+    padding: 200px 40px 8px 0px;
+}
+
+.gb-presentation-text-subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 4px;
+    padding: 8px 64px 16px 0px;
+}
+
+.gb-presentation-text-paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    padding: 16px 64px 0px 0px;
+}
+
+.gb-p-color {
+    background-color: #FECA80;
+}
+
+.gb-presentation-image {
+    display: flex;
+    width: 50%;
+}
+
+.gb-presentation-image img {
+    object-fit: cover;
+}
+/* PRESENTATION ENDS HERE */
+
+
+/* EDUCATION BEGINS HERE */
+.gb-education {
+    flex-direction: column;
+    background-color: #FF9505;
+    padding-left: 80px;
+    padding-right: 168px;
+}
+
+.gb-education-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 30px 0px 64px 0px;
+}
+
+.gb-education h2 {
+    color: #FDFFFC;
+    padding: 80px 0px 24px 0px;
+    letter-spacing: 8px;
+    padding-left: 88px;
+}
+
+.gb-education h3 {
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 18px;
+    color: #FDFFFC;
+    letter-spacing: 4px;
+    padding: 16px 0px 16px 44px;
+}
+
+.gb-education-academic {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 44px;
+    padding-right: 44px;
+}
+
+.gb-education-academic h4 {
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 13px;
+    color: black;
+    letter-spacing: 4px;
+    padding: 16px 24px 4px 0px;
+}
+
+.gb-h4-size {
+    font-size: 10px;
+}
+
+.gb-education-academic-school {
+    font-size: 14px;
+    color: black;
+    letter-spacing: 1px;
+    line-height: 150%;
+    font-weight: 500;
+    padding: 1px 24px 1px 0px;
+}
+
+.gb-education-academic-conclusion {
+    font-size: 14px;
+    color: #FDFFFC;
+    letter-spacing: 1px;
+    line-height: 150%;
+    font-weight: 400;
+    padding: 1px 24px 12px 0px;
+}
+
+.gb-education-courses {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: solid;
+    border-width: 2px;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    padding-left: 24px;
+}
+
+.gb-education-courses-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 40px;
+}
+
+.gb-education-courses h4 {
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 13px;
+    color: black;
+    letter-spacing: 4px;
+    padding: 16px 0px 4px 0px;
+}
+
+.gb-education-courses-school {
+    font-size: 14px;
+    color: black;
+    letter-spacing: 1px;
+    line-height: 150%;
+    font-weight: 500;
+    padding: 1px 0px 1px 0px;
+}
+
+.gb-education-courses-type {
+    font-size: 14px;
+    color: #FDFFFC;
+    letter-spacing: 1px;
+    line-height: 150%;
+    font-weight: 400;
+    padding: 1px 0px 12px 0px;
+}
+/* EDUCATION ENDS HERE */
+
+
+/* WHAT I DO BEGINS HERE */
+.gb-what {
+    flex-direction: column;
+    background-color: #1E1E1E;
+    padding-left: 168px;
+    padding-right: 112px;
+}
+
+.gb-what h2 {
+    color: #FF9505;
+    padding: 80px 0px 24px 0px;
+    letter-spacing: 8px;
+}
+
+.gb-what-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.gb-what-img {
+    height: 120px;
+    padding: 24px 0px 8px 0px;
+}
+
+.gb-what-ux {
+    padding: 8px 56px 8px 0px;
+    text-align: center;
+}
+
+.gb-what-artist {
+    padding: 8px 56px 8px 0px;
+    text-align: center;
+}
+
+.gb-what-producer {
+    padding: 8px 56px 8px 0px;
+    text-align: center;
+}
+
+.gb-what h3 {
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 15px;
+    color: #FDFFFC;
+    letter-spacing: 4px;
+    padding: 24px 0px 16px 0px;
+}
+
+.gb-what p {
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    line-height: 200%;
+    color: #FDFFFC;
+    text-align: justify;
+    padding: 0px 0px 64px 0px;
+}
+/* WHAT I DO ENDS HERE */
+
+
+/* PROJECTS BEGINS HERE */
+.gb-projects {
+    flex-direction: column;
+    background-color: #FDFFFC;
+    padding-left: 168px;
+    padding-right: 168px;
+}
+
+.gb-projects-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px 0px;
+}
+
+.gb-projects h2 {
+    color: #010B14;
+    padding: 80px 0px 0px 0px;
+    letter-spacing: 8px;
+}
+
+.gb-h3-size {
+    font-size: 16px;
+}
+
+.gb-projects-row ul {
+    list-style-type: none;
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.gb-projects-row h3 {
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 22px;
+    letter-spacing: 4px;
+    color: #FF9505;
+    padding: 40px 0px 24px 0px;
+}
+
+.gb-projects-row ul li h4 {
+    font-family: 'Akira Expanded', sans-serif;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding: 16px 16px 4px 16px;
+    background-color: black;
+    color: white;
+}
+
+.gb-projects-row ul li p {
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 150%;
+    padding: 4px 16px 16px 16px;
+    background-color: black;
+    color: white;
+    text-align: justify;
+    display: inline-table;
+}
+
+[class^='gb-projects-figure'] {
+    height: 350px;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    filter: grayscale(100%);
+}
+
+.gb-projects-row ul li:hover h4 {
+    background-color: #FF9505;
+}
+
+.gb-projects-row ul li:hover p {
+    background-color: #FF9505;
+}
+
+.gb-projects-row ul li:hover [class^='gb-projects-figure'] {
+    filter: grayscale(0);
+}
+
+.gb-projects-figure-1 {
+    background-image: url(/public/assets/giovana/img/gb-projects-figure-1.jpg);
+}
+
+.gb-projects-figure-2 {
+    background-image: url(/public/assets/giovana/img/gb-projects-figure-2.jpg);
+}
+
+.gb-projects-figure-3 {
+    background-image: url(/public/assets/giovana/img/gb-projects-figure-3.jpg);
+    background-position-x: 25%;
+}
+
+.gb-projects-figure-4 {
+    background-image: url(/public/assets/giovana/img/gb-projects-figure-4.jpg);
+    background-position-x: right;
+}
+
+.gb-projects-figure-5 {
+    background-image: url(/public/assets/giovana/img/gb-projects-figure-5.jpg);
+}
+
+.gb-projects-figure-6 {
+    background-image: url(/public/assets/giovana/img/gb-projects-figure-6.jpg);
+    background-position-x: 55%;
+}
+
+.gb-projects-figure-7 {
+    background-image: url(/public/assets/giovana/img/gb-projects-figure-7.jpg);
+}
+
+.gb-projects-figure-8 {
+    background-image: url(/public/assets/giovana/img/gb-projects-figure-8.jpg);
+    background-position-x: 45%;
+}
+
+.gb-projects-figure-9 {
+    background-image: url(/public/assets/giovana/img/gb-projects-figure-9.jpg);
+}
+
+.gb-projects-figure-10 {
+    background-image: url(/public/assets/giovana/img/gb-projects-figure-10.jpg);
+    background-position-x: 25%;
+}
+
+.gb-projects-figure-11 {
+    background-image: url(/public/assets/giovana/img/gb-projects-figure-11.jpg);
+    background-position-x: 60%;
+}
+
+.gb-projects-figure-12 {
+    background-image: url(/public/assets/giovana/img/gb-projects-figure-12.jpg);
+    background-position-x: 25%;
+}
+/* PROJECTS ENDS HERE */
+
+
+
+
+
+
+
+/* RESPONSIVE 1100PX */
+@media only screen and (max-width: 1100px) {
+
+    /* PRESENTATION BEGINS HERE */
+    .gb-section-title {
+        font-family: 'Akira Expanded', sans-serif;
+        font-size: 20px;
+        padding: 8px 0px;
+    }
+    
+    .gb-presentation {
+        flex-direction: row;
+        height: 70vh;
+        padding-left: 120px;
+    }
+
+    .gb-presentation-text h1 {
+        font-family: 'Akira Expanded', sans-serif;
+        font-size: 24px;
+        font-weight: 750;
+        letter-spacing: 12px;
+        padding: 104px 40px 8px 0px;
+    }
+
+    .gb-presentation-text-subtitle {
+        font-size: 16px;
+        font-weight: 550;
+        line-height: 30px;
+        letter-spacing: 4px;
+        padding: 8px 64px 16px 0px;
+    }
+
+    .gb-presentation-text-paragraph {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 40px;
+        letter-spacing: 2px;
+        padding: 16px 64px 0px 0px;
+    }
+    /* PRESENTATION ENDS HERE */
+
+
+    /* EDUCATION BEGINS HERE */
+    .gb-education {
+        flex-direction: column;
+        background-color: #FF9505;
+        padding-left: 36px;
+        padding-right: 120px;
+    }
+
+    .gb-education h3 {
+        font-family: 'Akira Expanded', sans-serif;
+        font-size: 16px;
+        color: #FDFFFC;
+        letter-spacing: 4px;
+        padding: 16px 0px 16px 44px;
+    }
+    
+    .gb-education-academic h4 {
+        font-family: 'Akira Expanded', sans-serif;
+        font-size: 12px;
+        color: black;
+        letter-spacing: 4px;
+        padding: 16px 24px 4px 0px;
+    }
+        
+    .gb-education-courses h4 {
+        font-family: 'Akira Expanded', sans-serif;
+        font-size: 12px;
+        color: black;
+        letter-spacing: 4px;
+        padding: 16px 0px 4px 0px;
+    }
+        
+    .gb-education-courses-type {
+        font-size: 14px;
+        color: #FDFFFC;
+        letter-spacing: 1px;
+        line-height: 150%;
+        font-weight: 400;
+        padding: 1px 0px 40px 0px;
+    }
+    /* EDUCATION ENDS HERE */
+
+    /* WHAT-I-DO BEGINS HERE */
+    .gb-what {
+        flex-direction: column;
+        background-color: #1E1E1E;
+        padding-left: 120px;
+        padding-right: 64px;
+    }
+
+    .gb-what-img {
+        height: 100px;
+        padding: 24px 0px 8px 0px;
+    }
+    /* WHAT-I-DO ENDS HERE */
+
+    /* PROJECTS BEGINS HERE */
+    .gb-projects {
+        flex-direction: column;
+        background-color: #FDFFFC;
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+    
+    .gb-projects-row h3 {
+        font-family: 'Akira Expanded', sans-serif;
+        font-size: 20px;
+        letter-spacing: 4px;
+        color: #FF9505;
+        padding: 40px 0px 24px 0px;
+    }
+    /* PROJECTS ENDS HERE */
+
+}
+
+
+/* RESPONSIVE 900PX */
+@media only screen and (max-width: 900px) {
+    .gb-section-title {
+        font-family: 'Akira Expanded', sans-serif;
+        font-size: 18px;
+        padding: 8px 0px;
+    }
+
+    /* PRESENTATION BEGINS HERE */
+    .gb-presentation {
+        flex-direction: row;
+        height: 65vh;
+        padding-left: 80px;
+    }
+
+    .gb-presentation-text h1 {
+        font-family: 'Akira Expanded', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 12px;
+        padding: 104px 24px 8px 0px;
+    }
+
+    .gb-presentation-text-subtitle {
+        font-size: 14px;
+        font-weight: 550;
+        line-height: 24px;
+        letter-spacing: 4px;
+        padding: 12px 24px 8px 0px;
+    }
+
+    .gb-presentation-text-paragraph {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 2px;
+        padding: 12px 64px 0px 0px;
+    }
+    /* PRESENTATION ENDS HERE */
+
+    /* EDUCATION BEGINS HERE */
+    .gb-education-row {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        padding: 30px 0px 48px 0px;
+    }
+
+    .gb-education {
+        flex-direction: column;
+        background-color: #FF9505;
+        padding-left: 0px;
+        padding-right: 80px;
+    }
+
+    .gb-education h2 {
+        color: #FDFFFC;
+        padding: 56px 0px 16px 0px;
+        letter-spacing: 8px;
+        padding-left: 88px;
+    }
+
+    .gb-education h3 {
+        font-family: 'Akira Expanded', sans-serif;
+        font-size: 14px;
+        color: #FDFFFC;
+        letter-spacing: 4px;
+        padding: 8px 0px 8px 44px;
+    }
+
+    .gb-education-academic h4 {
+        font-family: 'Akira Expanded', sans-serif;
+        font-size: 11px;
+        line-height: 150%;
+        color: black;
+        letter-spacing: 4px;
+        padding: 16px 24px 4px 0px;
+    }
+
+    .gb-h4-size {
+        font-size: 9px;
+    }
+
+    .gb-education-academic-school {
+        font-size: 13px;
+        color: black;
+        letter-spacing: 1px;
+        line-height: 150%;
+        font-weight: 450;
+        padding: 1px 24px 1px 0px;
+    }
+    
+    .gb-education-academic-conclusion {
+        font-size: 13px;
+        color: #FDFFFC;
+        letter-spacing: 1px;
+        line-height: 150%;
+        font-weight: 400;
+        padding: 1px 24px 12px 0px;
+    }
+
+    .gb-education-courses h4 {
+        font-family: 'Akira Expanded', sans-serif;
+        font-size: 11px;
+        line-height: 150%;
+        color: black;
+        letter-spacing: 4px;
+        padding: 16px 80px 4px 0px;
+    }
+
+    .gb-education-courses-school {
+        font-size: 13px;
+        color: black;
+        letter-spacing: 1px;
+        line-height: 150%;
+        font-weight: 450;
+        padding: 1px 80px 1px 0px;
+    }
+
+    .gb-education-courses-type {
+        font-size: 13px;
+        color: #FDFFFC;
+        letter-spacing: 1px;
+        line-height: 150%;
+        font-weight: 400;
+        padding: 1px 0px 16px 0px;
+    }
+    /* EDUCATION ENDS HERE */
+
+    /* WHAT-I-DO BEGINS HERE */
+    .gb-what {
+        flex-direction: column;
+        background-color: #1E1E1E;
+        padding-left: 80px;
+        padding-right: 24px;
+    }
+
+    .gb-what h2 {
+        color: #FF9505;
+        padding: 56px 0px 16px 0px;
+        letter-spacing: 8px;
+    }
+
+    .gb-what-img {
+        height: 100px;
+        padding: 24px 0px 8px 0px;
+    }
+
+    .gb-what h3 {
+        font-family: 'Akira Expanded', sans-serif;
+        font-size: 14px;
+        color: #FDFFFC;
+        letter-spacing: 4px;
+        padding: 20px 0px 16px 0px;
+    }
+
+    .gb-what p {
+        font-size: 13px;
+        letter-spacing: 2px;
+        font-weight: 300;
+        line-height: 180%;
+        color: #FDFFFC;
+        text-align: justify;
+        padding: 0px 0px 48px 0px;
+    }
+    /* WHAT-I-DO ENDS HERE */
+
+    /* PROJECTS STARTS HERE */
+    .gb-projects-row {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 24px 0px;
+    }
+
+    .gb-projects {
+        flex-direction: column;
+        background-color: #FDFFFC;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .gb-projects h2 {
+        color: #010B14;
+        padding: 56px 0px 0px 0px;
+        letter-spacing: 8px;
+    }
+
+    .gb-projects-row h3 {
+        font-family: 'Akira Expanded', sans-serif;
+        font-size: 18px;
+        letter-spacing: 4px;
+        color: #FF9505;
+        padding: 24px 0px 16px 0px;
+    }
+
+    .gb-h3-size {
+        font-size: 14px;
+    }
+    /* PROJECTS ENDS HERE */
+
+}
+
+
+/* RESPONSIVE 800PX */
+@media only screen and (max-width: 800px) {
+    .gb-section-title {
+        font-family: 'Akira Expanded', sans-serif;
+        font-size: 17px;
+        padding: 8px 0px;
+    }
+
+    /* PRESENTATION BEGINS HERE */
+    .gb-presentation {
+        flex-direction: row;
+        height: 65vh;
+        padding-left: 56px;
+    }
+
+    .gb-presentation-text h1 {
+        font-family: 'Akira Expanded', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 10px;
+        padding: 104px 24px 8px 0px;
+    }
+
+    .gb-presentation-text-subtitle {
+        font-size: 13px;
+        font-weight: 550;
+        line-height: 24px;
+        letter-spacing: 3px;
+        padding: 12px 24px 8px 0px;
+    }
+
+    .gb-presentation-text-paragraph {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 2px;
+        padding: 12px 64px 0px 0px;
+    }
+    /* PRESENTATION ENDS HERE */
+
+    /* EDUCATION BEGINS HERE */
+    .gb-education h2 {
+        color: #FDFFFC;
+        padding: 56px 0px 16px 0px;
+        letter-spacing: 8px;
+        padding-left: 64px;
+    }
+
+    .gb-education h3 {
+        font-family: 'Akira Expanded', sans-serif;
+        font-size: 16px;
+        color: #FDFFFC;
+        letter-spacing: 4px;
+        padding: 16px 0px 16px 32px;
+    }
+
+    .gb-education-academic {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 32px;
+        padding-right: 44px;
+    }
+    /* EDUCATION ENDS HERE */
+
+    /* WHAT-I-DO BEGINS HERE */
+    .gb-what {
+        flex-direction: column;
+        background-color: #1E1E1E;
+        padding-left: 65px;
+        padding-right: 24px;
+    }
+
+    .gb-what-img {
+        height: 80px;
+        padding: 24px 0px 8px 0px;
+    }
+
+    .gb-what h3 {
+        font-family: 'Akira Expanded', sans-serif;
+        font-size: 13px;
+        color: #FDFFFC;
+        letter-spacing: 4px;
+        padding: 20px 0px 16px 0px;
+    }
+
+    .gb-what p {
+        font-size: 12px;
+        letter-spacing: 2px;
+        font-weight: 300;
+        line-height: 150%;
+        color: #FDFFFC;
+        text-align: justify;
+        padding: 0px 0px 48px 0px;
+    }
+    /* WHAT-I-DO ENDS HERE */
+
+    /* PROJECTS STARTS HERE */
+    .gb-projects {
+        flex-direction: column;
+        background-color: #FDFFFC;
+        padding-left: 65px;
+        padding-right: 65px;
+    }
+
+    .gb-h3-size {
+        font-size: 14px;
+    }
+
+    .gb-projects-row ul {
+        list-style-type: none;
+        display: grid;
+        column-gap: 20px;
+        row-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+    }
+    /* PROJECTS ENDS HERE */
+}
+
+/* RESPONSIVE 650PX */
+@media only screen and (max-width: 650px) {
+    .gb-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
+    
+    .gb-section {
+        display: flex;
+        width: 100%;
+        padding: 0px 40px;
+        box-sizing: border-box;
+    }
+    
+    .gb-section-title {
+        font-family: 'Akira Expanded', sans-serif;
+        font-size: 18px;
+        padding: 8px 0px;
+    }
+    
+    
+    /* PRESENTATION BEGINS HERE */
+    .gb-presentation {
+        flex-direction: column-reverse;
+        height: 120vh;
+        padding: 0px;
+    }
+    
+    .gb-presentation-text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #FDFFFC;
+    }
+    
+    .gb-presentation-text h1 {
+        font-family: 'Akira Expanded', sans-serif;
+        font-size: 20px;
+        font-weight: 800;
+        letter-spacing: 8px;
+        padding: 40px 40px 8px 40px;
+    }
+    
+    .gb-presentation-text-subtitle {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 30px;
+        letter-spacing: 2px;
+        padding: 8px 40px 16px 40px;
+    }
+    
+    .gb-presentation-text-paragraph {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 2px;
+        padding: 8px 40px 40px 40px;
+    }
+    
+    .gb-presentation-image {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .gb-presentation-image img {
+        object-fit: cover;
+        width: 100%;
+    }
+    /* PRESENTATION ENDS HERE */
+    
+    
+    /* EDUCATION BEGINS HERE */
+    .gb-education {
+        flex-direction: column;
+        background-color: #FF9505;
+    }
+    
+    .gb-education-row {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .gb-education h2 {
+        color: #FDFFFC;
+        padding: 40px 40px 0px 0px;
+        letter-spacing: 8px;
+    }
+    
+    .gb-education h3 {
+        font-family: 'Akira Expanded', sans-serif;
+        font-size: 16px;
+        color: #FDFFFC;
+        letter-spacing: 4px;
+        padding: 16px 40px 16px 0px;
+    }
+    
+    .gb-education-academic {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 40px;
+    }
+    
+    .gb-education-academic h4 {
+        font-family: 'Akira Expanded', sans-serif;
+        font-size: 13px;
+        color: black;
+        letter-spacing: 3px;
+        padding: 16px 40px 4px 0px;
+    }
+    
+    .gb-h4-size {
+        font-size: 10px;
+    }
+    
+    .gb-education-courses {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        width: 100%;
+        padding-top: 40px;
+        padding-left: 0px;
+    }
+    
+    .gb-education-courses-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0px;
+    }
+    
+    .gb-education-courses h4 {
+        font-family: 'Akira Expanded', sans-serif;
+        font-size: 13px;
+        color: black;
+        letter-spacing: 3px;
+        padding: 16px 40px 4px 0px;
+    }
+    /* EDUCATION ENDS HERE */
+    
+    
+    /* WHAT I DO BEGINS HERE */
+    .gb-what {
+        flex-direction: column;
+        background-color: #1E1E1E;
+        padding-left: 40px;
+        padding-right: 0px;
+    }
+    
+    .gb-what h2 {
+        color: #FF9505;
+        padding: 40px 0px 16px 0px;
+        letter-spacing: 8px;
+    }
+    
+    .gb-what-row {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .gb-what-img {
+        height: 150px;
+    }
+    
+    .gb-what-ux {
+        text-align: center;
+    }
+    
+    .gb-what-artist {
+        text-align: center;
+    }
+    
+    .gb-what-producer {
+        text-align: center;
+    }
+    
+    .gb-what h3 {
+        font-family: 'Akira Expanded', sans-serif;
+        font-size: 16px;
+        color: #FDFFFC;
+        letter-spacing: 4px;
+        padding: 24px 0px 16px 0px;
+    }
+    
+    .gb-what p {
+        font-size: 14px;
+        letter-spacing: 3px;
+        font-weight: 300;
+        line-height: 200%;
+        color: #FDFFFC;
+        text-align: justify;
+        padding: 0px 0px 64px 0px;
+    }
+    /* WHAT I DO ENDS HERE */
+    
+    
+    /* PROJECTS BEGINS HERE */
+    .gb-projects-row ul {
+        list-style-type: none;
+        display: grid;
+        column-gap: 20px;
+        row-gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+    .gb-projects {
+        flex-direction: column;
+        background-color: #FDFFFC;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .gb-projects-figure-3 {
+        background-image: url(/public/assets/giovana/img/gb-projects-figure-3.jpg);
+        background-position-x: center;
+    }
+    /* PROJECTS ENDS HERE */
+    
+}
