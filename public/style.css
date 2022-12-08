@@ -62,14 +62,13 @@ a {
 /* FIRST SECTION CSS */
 .firstSection {
     display: grid;
-    width: 100%;
     grid-template: 
-    "a b" 1fr
+    "a b" 100%
     ;
     width: 100%;
     grid-auto-columns: minmax(0, 1fr);
     grid-auto-flow: column;
-    height: 811px;
+    height: 85vh;
 }
 
 .firstSectionImage {
@@ -78,15 +77,12 @@ a {
 }
 
 .designImage {
-    width: 588.79;
-    height: 599.86;
-    padding-top: 56px;
-    padding-left: 138px;
+    width: 35vw;
+    padding-top: 10vh;
+    padding-left: 10vw;
 }
 
 .firstSectionContent {
-
-    /*height: 811px;*/
     background-color: #FF9505;
     grid-area: b;
     grid-column: 2;
@@ -97,7 +93,7 @@ a {
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    padding-left: 56px;
+    padding-left: 5vw;
 }
 
 .solutionsTitle {
@@ -111,7 +107,7 @@ a {
 }
 
 .solutionsBodyText {
-    width: 608px;
+    width: 30vw;
     font-family: 'Poppins';
     font-size: 24px;
     padding: 74px 0px 64px 0px;
@@ -164,7 +160,7 @@ a {
 
 .trustedByContainer {
     width: 100%;
-    height: 216px;
+    height: 20vh;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -188,10 +184,17 @@ a {
 }
 
 .teamContainer {
-    height: 1000px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 100%;
+    display: grid;
+    grid-template:
+    "a1" 23vh
+    "b1" 600px
+    ;
+    justify-content: center;
+}
+
+.teamTitleContainer {
+    grid-area: a1;
 }
 
 .trustedLogo {
@@ -217,14 +220,29 @@ a {
 }
 
 .teamCards {
+    grid-area: b1;
     padding: 61px 0px 0px 0px;
     display: grid;
     grid-template:  
-    "a a a b b b" 430px
-    "c c d d e e" 618px
+    "a a a b b b" 45vh
+    "c c d d e e" 64vh
     ;
-    width: 1328px;
+    width: 69vw;
     gap: 14px;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+}
+
+.teamImage {
+    width: 100%;
+}
+
+.topCard {
+    min-height: 434.7px;
+}
+
+.bottomCard {
+    min-height: 618.233px;
 }
 
 .giovana {
@@ -255,7 +273,7 @@ a {
 .teamNameTop {
     padding: 15px 0px 0px 45px;
     font-family: 'Akira Expanded';
-    font-size: 24px;
+    font-size: clamp(16px, 1vw, 24px);
 }
 
 .teamBioTop {
@@ -264,12 +282,13 @@ a {
     font-family: 'Poppins';
     font-weight: light;
     font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
 }
 
 .teamNameBottom {
     padding: 25px 0px 0px 45px;
     font-family: 'Akira Expanded';
-    font-size: 24px;
+    font-size: clamp(16px, 1vw, 24px);
 }
 
 .teamBioBottom {
@@ -281,22 +300,24 @@ a {
     width: 363px;
 }
 
+.sectionSpacer1 {
+    height: 100vh;
+}
+
 /* DESKTOP - SMALLER SCREEN SIZE */
 
 @media only screen and (max-width: 1600px) {
     .headerContent {
-        width: 1537px;
+        width: 100vw;
     }
     .logo {
-        padding-left: 67px;
+        padding-left: 10%;
     }
     .designImage {
-        padding-top: 41px;
-        padding-left: 121px;
+        padding-top: 10vh;
+        padding-left: 12vw;
     }
     .solutionsBodyText {
-        width: 608px;
-        font-family: 'Poppins';
         font-size: 20px;
         padding-top: 44px;
         padding: 44px 0px 34px 0px;
@@ -309,4 +330,4 @@ a {
         font-size: 40px;
     }
 
-  }
+}

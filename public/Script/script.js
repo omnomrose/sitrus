@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", function() {
         if (this.classList[2] == 'giovana') {
             location.href = 'index.html';
         } else if (this.classList[2] == 'corey') {
-            location.href = 'index.html';
+            location.href = 'corey.html';
         } else if (this.classList[2] == 'aaron') {
             location.href = 'index.html';
         } else if (this.classList[2] == 'mariela') {
@@ -16,5 +16,5 @@ window.addEventListener("DOMContentLoaded", function() {
         }
       });
     });
-    
+
   });
