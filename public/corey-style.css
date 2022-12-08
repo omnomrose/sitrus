@@ -1,0 +1,850 @@
+@import url('https://fonts.cdnfonts.com/css/akira-expanded');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://use.typekit.net/rmi2rkj.css");
+
+.header {
+    width: 100vw;
+    height: 106px;
+    max-height: 106px;
+    border-bottom: solid 2px #FF9505;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.brand {
+    font-family: 'Akira Expanded';
+    font-size: 40px;
+    color: white;
+    margin-bottom: 18px;
+    padding-left: 35px;
+}
+
+.headerContent {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 30vw;
+    display: flex;
+    align-items: flex-end;
+}
+
+.logoImage {
+    margin-bottom: 11px;
+}
+
+.navigation {
+    width: 1126px;
+    height: 106px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 40px;
+}
+
+.navLink {
+    font-family: 'Akira Expanded';
+    font-size: 16px;
+}
+
+.navLink:hover {
+    color: #FF9505;
+}
+
+.navItem {
+    margin-bottom: 32px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Header Ends */
+
+.introSection {
+    display: grid;
+    grid-template: 
+    "a b" 1fr
+    ;
+    width: 100vw;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+    height: 100vh;
+    position: sticky;
+    top: 110px;
+}
+
+.nameContainer {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    padding-left: 12vw;
+    top: 50%;
+    width: 35vw;
+    padding-left: 12vw;
+}
+
+.InnerTitleContainer {
+    box-shadow: 10px 10px #FF9505, -10px -10px #FF9505;
+    padding: 30px;
+}
+
+.nameTitle {
+    font-family: 'Akira Expanded';
+    font-size: clamp(24px, 2vw, 40px);
+    color: white;
+    letter-spacing: 10px;
+    padding: 0px 0px 22px 0px;
+    margin: 10px 0 0 0;
+    
+}
+
+.nameSubTitle {
+    font-family: 'Akira Expanded';
+    font-size: clamp(16px, 1vw, 20px);
+    color: white;
+    text-align: right;
+    color: #FF9505;
+}
+
+.nameContainer {
+    grid-area: a;
+
+}
+
+.coreyImageContainer {
+    grid-area: b;
+    padding-top: 10vh;
+    padding-left: 5vw;
+}
+
+.coreyImage1 {
+    background-color: white;
+    color:white;
+    width: 50vh;
+    z-index: 1;
+    box-shadow: 10px -10px #FF9505;
+}
+
+.bioSection {
+    display: grid;
+    grid-template: 
+    "c b" 1fr
+    ;
+    width: 100vw;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+    height: 967px;
+    position: sticky;
+    top: 23vh;
+}
+
+.bioContainer {
+    grid-area: c;
+    width: 36vw;
+    z-index: 2;
+    background-color: black;
+    padding-left: 12vw;
+    position: sticky;
+    top: 24vh;
+    height: 100%;
+}
+
+.bioText {
+    font-family: 'Poppins';
+    font-size: clamp(14px, 1vw, 20px);
+    color: white;
+    box-shadow: 10px 10px #FF9505, -10px -10px #FF9505;
+    padding: 30px;
+}
+
+.emptyGridBox1 {
+    grid-area: d;
+}
+
+.servicesSection1 {
+    height: 967px;
+    display: grid;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+
+.servicesSectionContainer {
+    display: grid;
+    grid-template: 
+    "e f" 30vh
+    "g h" 30vh
+    ;
+    width: 80vw;
+    z-index: 4;
+    position: sticky;
+    background: linear-gradient(90deg, transparent 50%, black 50%);;
+    gap: 95px;
+    margin: 20vh 0 0 0;
+}
+
+.serviceBoxOne {
+    grid-area: e;
+    opacity: 0;
+}
+
+.serviceBoxOneInner {
+    background-color: #FF9505;
+    width: 85%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 31vh;
+    min-width: 31vw;
+}
+
+.serviceBoxOneInner p {
+    font-family: 'Akira Expanded';
+    font-size: clamp(16px, 1vw, 20px);
+    margin: 12px 0 12px 0 !important;
+}
+
+.serviceBoxTwo {
+    grid-area: f;
+    opacity: 1;
+    display: flex;
+    align-items: flex-end;
+}
+
+.serviceBoxThree {
+    grid-area: g;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.serviceBoxFour {
+    grid-area: h;
+    display: flex;
+}
+
+.sectionSpacer1 {
+    z-index: 6;
+    position: relative;
+    height: 70vh;
+}
+
+.eComSection {
+    height: 967px;
+    width: 100vw;
+    z-index: 7;
+    position: sticky;
+    top: 0px;
+    background-color: #FF9505;
+    justify-content: center;
+}
+
+.ecomContainer {
+    width: 59.5vw;
+    margin: auto;
+    padding-top: 8%;
+    display: grid;
+    grid-template: 
+    "a1 a1 a1 a1" 10vh
+    "b1 b1 c1 c1" 30vh
+    "d1 e1 f1 g1" 36vh
+    ;
+    gap: 10px;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+    min-width: 1086px;
+}
+
+.eComTitle {
+    grid-area: a1;
+    background-color: black;
+    color: white;
+    height: 83px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(22px, 1.5vw, 30px);
+    font-family: 'Akira Expanded';
+    box-shadow: 4px 4px 4px black;
+}
+
+.ecomCardTitle {
+    height: 20%;
+    background: black;
+    font-size: 18px;
+    color: white;
+    width: 100%;
+    font-family: 'Akira Expanded';
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.eComTitle p {
+    letter-spacing: 10px;
+}
+
+.ecomDescContainer {
+    grid-area: b1;
+    overflow: hidden;
+    box-shadow: 4px 4px 4px black;
+}
+
+.ecomDescription {
+    background-color: white;
+    font-size: clamp(14px, .9vw, 18px);
+    font-family: 'Poppins';
+    padding: 1.5vw 1vw 1.5vw 1vw;
+    height: 100%;
+}
+
+.eComImageContainer {
+    width: 1fr;
+    grid-area: c1;
+}
+
+.ecomImage {
+    width: 100%;
+    height: 100%;
+    box-shadow: 4px 4px 4px black;
+}
+
+.eComCard {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 4px 4px black;
+    min-height: 264px;
+}
+
+.eComCardDesc {
+    background-color: white;
+    height: 100%;
+    font-family: 'Poppins';
+    font-size: clamp(14px, 1vw, 16px);
+}
+
+.eComCardDesc ul {
+    padding-right: 15px;
+}
+.ecomCard1 {
+    grid-area: d1;
+}
+
+.ecomCard2 {
+    grid-area: e1;
+}
+
+.ecomCard3 {
+    grid-area: f1;
+}
+
+.ecomCard4 {
+    grid-area: g1;
+}
+
+.sectionSpacer2 {
+    z-index: 8;
+    position: relative;
+    height: 70vh;
+}
+
+.emailMarketingSection {
+    height: 967px;
+    width: 100vw;
+    z-index: 7;
+    position: sticky;
+    top: 0px;
+    background-color: black;
+    justify-content: center;
+}
+
+.emailMarketingContainer {
+    width: 59.5vw;
+    margin: auto;
+    padding-top: 8%;
+    display: grid;
+    grid-template: 
+    "a1 a1 a1 a1" 10vh
+    "c1 c1 b1 b1" 30vh
+    "d1 e1 f1 g1" 36vh
+    ;
+    gap: 10px;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+    min-width: 1086px;
+}
+
+.emailMarketingTitle {
+    grid-area: a1;
+    background-color: #FF9505;
+    color: black;
+    height: 83px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(22px, 1.5vw, 30px);
+    font-family: 'Akira Expanded';
+    box-shadow: 4px 4px 4px #FF9505;
+}
+
+.emailMarketingCardTitle {
+    height: 20%;
+    background: #FF9505;
+    font-size: 18px;
+    color: black;
+    width: 100%;
+    font-family: 'Akira Expanded';
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.emailMarketingTitle p {
+    letter-spacing: 10px;
+}
+
+.emailMarketingDescContainer {
+    grid-area: b1;
+    overflow: hidden;
+    box-shadow: 4px 4px 4px #FF9505;
+}
+
+.emailMarketingDescription {
+    background-color: white;
+    font-size: clamp(14px, .9vw, 18px);
+    font-family: 'Poppins';
+    padding: 1.5vw 1vw 1.5vw 1vw;
+    height: 100%;
+}
+
+.emailMarketingImageContainer {
+    width: 1fr;
+    grid-area: c1;
+}
+
+.emailMarketingImage {
+    width: 100%;
+    height: 100%;
+    box-shadow: 4px 4px 4px #FF9505;
+}
+
+.emailMarketingCard {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 4px 4px #FF9505;
+    min-height: 256px;
+}
+
+.emailMarketingCardDesc {
+    background-color: white;
+    height: 100%;
+    font-family: 'Poppins';
+    font-size: clamp(14px, 1vw, 16px);
+}
+
+.emailMarketingCardDesc ul {
+    padding-right: 15px;
+}
+.emailMarketingCard1 {
+    grid-area: d1;
+}
+
+.emailMarketingCard2 {
+    grid-area: e1;
+}
+
+.emailMarketingCard3 {
+    grid-area: f1;
+}
+
+.emailMarketingCard4 {
+    grid-area: g1;
+}
+
+
+/* Web Dev Section */
+
+.sectionSpacer3 {
+    z-index: 9;
+    position: relative;
+    height: 70vh;
+}
+
+.webDevSection {
+    height: 967px;
+    width: 100vw;
+    z-index: 10;
+    position: sticky;
+    top: 0px;
+    background-color: black;
+    justify-content: center;
+}
+
+.webDevContainer {
+    width: 59.5vw;
+    margin: auto;
+    padding-top: 8%;
+    display: grid;
+    grid-template: 
+    "a2 a2 a2 a2" 10vh
+    "b2 b2 c2 c2" 45vh
+    "d2 e2 f2 g2" 20vh
+    ;
+    gap: 10px;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+    min-width: 1086px;
+}
+
+.webDevTitle {
+    grid-area: a2;
+    background-color: #FF9505;
+    color: black;
+    height: 83px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(22px, 1.5vw, 30px);
+    font-family: 'Akira Expanded';
+    box-shadow: 4px 4px 4px gray;
+}
+
+.webDevCardTitle {
+    height: 20%;
+    background: #FF9505;
+    font-size: 18px;
+    color: black;
+    width: 100%;
+    font-family: 'Akira Expanded';
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.webDevTitle p {
+    letter-spacing: 10px;
+}
+
+.webDevDescContainer {
+    grid-area: b2;
+    overflow: hidden;
+    box-shadow: 4px 4px 4px gray;
+}
+
+.webDevDescription {
+    background-color: white;
+    font-size: clamp(12px, .9vw, 18px);
+    font-family: 'Poppins';
+    padding: .5vw 1vw 0 1vw;
+    height: 98%;
+}
+
+.webDevImageContainer {
+    width: 1fr;
+    grid-area: c2;
+}
+
+.webDevImageBig {
+    width: 100%;
+    height: 100%;
+    box-shadow: 4px 4px 4px gray;
+}
+
+
+.webDevImage {
+    width: 100%;
+    height: 100%;
+    box-shadow: 4px 4px 4px gray;
+}
+
+.boxTerra1 {
+   grid-area: d2;
+   overflow: hidden;
+   box-shadow: 5px 5px 5px gray;
+}
+.boxTerra2 {
+    grid-area: e2;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.indoorNow1 {
+    grid-area: f2;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.indoorNow2 {
+    grid-area: g2;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.sectionSpacer4 {
+    z-index: 9;
+    position: relative;
+    height: 70vh;
+}
+
+.webDevImageCard:hover {
+    box-shadow: 5px 5px 5px white;
+}
+
+/* ADD SERVICE */
+
+.addService {
+    height: 967px;
+    width: 100vw;
+    z-index: 10;
+    position: sticky;
+    top: 0px;
+    background-color: black;
+    justify-content: center;
+}
+
+.addServiceContainer {
+    width: 59.5vw;
+    margin: auto;
+    padding-top: 8%;
+    display: grid;
+    grid-template: 
+    "a3 a3 a3 a3" 300px
+    "b3 c3 d3 e3" 300px
+    ;
+    gap: 10px;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+    min-width: 1086px;
+}
+
+.addServiceDisplayBox {
+    grid-area: a3;
+    background-color: #FF9505;
+    display: flex;
+    flex-direction: column;
+}
+
+.addServiceTitleDisplay {
+    background-color: #FF9505; 
+    width: 100%;
+}
+
+.addServiceTitleDisplay p {
+    height: 20%;
+    background: #FF9505;
+    font-size: 18px;
+    color: black;
+    width: 100%;
+    font-family: 'Akira Expanded';
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.addServiceInfo {
+    background-color: white; 
+    width: 100%;
+    height: 84%;
+}
+
+
+.addServiceInfo p {
+    font-size: clamp(16px, 1vw, 18px);
+    font-family: 'Poppins';
+    padding-left: 1vw;
+    height: 100%;
+}
+
+.addServiceCard1 {
+    grid-area: b3;
+
+}
+
+.addServiceCardDesc {
+    background-color: white;
+    height: 100%;
+}
+
+.addServiceCardDesc ul {
+    padding: 45px 10px 10px 50px;
+    font-family: 'Poppins';
+    font-size: clamp(14px, 1vw, 16px);
+}
+
+.addServiceCardTitle {
+    height: 20%;
+    background: #FF9505;
+    font-size: 18px;
+    color: black;
+    width: 100%;
+    font-family: 'Akira Expanded';
+    display: flex;
+    flex-direction: column;
+    justify-content: bottom;
+    align-items: center;
+    letter-spacing: 5px;
+}
+
+.addServiceCard2 {
+    grid-area: c3;  
+}
+
+.addServiceCard3 {
+    grid-area: d3;
+}
+
+.addServiceCard4 {
+    grid-area: e3;
+}
+
+@media only screen and (max-width: 1749px) {
+    /* Ecom Section */
+    .ecomContainer {
+        padding-top: 18vh;
+    }
+
+    /* Email Marketing Section */
+    .emailMarketingContainer {
+        padding-top: 18vh;
+    }
+
+    /* Web Dev Section */
+    .webDevContainer {
+        padding-top: 18vh;
+    }
+}
+
+@media only screen and (max-width: 1186px) {
+    .introSection {
+        display: grid;
+        grid-template: 
+        "a b" 1fr
+        ;
+        width: 100vw;
+        grid-auto-columns: minmax(0, 1fr);
+        grid-auto-flow: column;
+        height: 100vh;
+        top: 110px;
+        position: relative;
+    }
+    .bioSection {
+        display: grid;
+        grid-template: 
+        "c" 100%
+        ;
+        width: 100%;
+        height: 100%;
+        top: 23vh;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .bioContainer {
+        width: 230%;
+    }
+    
+    .servicesSection1 {
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        top: 0;
+        position: relative;
+        padding-bottom: 90px;
+    }
+    .servicesSectionContainer {
+        display: grid;
+        grid-template: 
+        "f" 35vh 
+        "g" 35vh
+        "h" 35vh
+        ;
+        width: 50vw;
+        background: none;
+        gap: 40px;
+        padding: 20vh 0 0 0;
+        justify-content: center;
+        position: relative;
+        grid-auto-columns: minmax(0, 1fr);
+        grid-auto-flow: column;
+    }
+
+    .serviceBoxOne {
+        display: none;
+    }
+
+    .serviceBoxOneInner{
+        height: 35vh;
+    }
+
+    .eComSection {
+        height: 120%;
+        width: 100vw;
+        top: 0px;
+        background-color: #FF9505;
+        justify-content: center;
+        position: relative;
+    }
+
+    .ecomContainer {
+        width: 59.5vw;
+        margin: auto;
+        padding-top: 8%;
+        display: grid;
+        grid-template: 
+        "a1 a1" 10vh
+        "b1 b1" 30vh
+        "c1 c1" 30vh
+        "d1 e1" 36vh
+        "f1 g1" 36vh
+        ;
+        gap: 10px;
+        grid-auto-columns: minmax(0, 1fr);
+        grid-auto-rows: 35vh;
+        grid-auto-flow: column;
+        min-width: 600px;
+        height: 100%;
+    }
+
+    .addService {
+        height: 967px;
+        width: 100vw;
+        top: 0px;
+        background-color: black;
+        justify-content: center;
+        position: relative;
+    }
+
+    .emailMarketingContainer {
+        padding-top: 0px;
+    }
+
+    .emailMarketingSection {
+        height: 967px;
+        width: 100vw;
+        top: 0px;
+        background-color: black;
+        justify-content: center;
+        position: relative;
+    }
+    .webDevSection {
+        height: 967px;
+        width: 100vw;
+        top: 0px;
+        background-color: black;
+        justify-content: center;
+        position: relative;
+    }
+    .sectionSpacer1 {
+        height: 0;
+    }
+    .sectionSpacer2 {
+        z-index: 8;
+        position: relative;
+        height: 0;
+    }
+
+
+}
