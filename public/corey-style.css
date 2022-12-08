@@ -140,6 +140,10 @@ a {
     box-shadow: 10px -10px #FF9505;
 }
 
+.coreyImage1:hover {
+    box-shadow: 10px -10px 10px white;
+}
+
 .bioSection {
     display: grid;
     grid-template: 
@@ -198,6 +202,18 @@ a {
     margin: 20vh 0 0 0;
 }
 
+.serviceBoxImage {
+    grid-area: serv1;
+    text-align: center;
+    width: 100%;
+}
+
+.serviceBoxText {
+    grid-area: serv2;
+    text-align: center;
+}
+
+
 .serviceBoxOne {
     grid-area: e;
     opacity: 0;
@@ -206,11 +222,17 @@ a {
 .serviceBoxOneInner {
     background-color: #FF9505;
     width: 85%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
     height: 31vh;
     min-width: 31vw;
+    display: grid;
+    grid-template:     
+    "serv1" 80%
+    "serv2" 20%
+    ;
+}
+
+.serviceBoxOneInner:hover {
+    box-shadow: 3px 3px 3px white;
 }
 
 .serviceBoxOneInner p {
@@ -792,6 +814,7 @@ a {
         position: relative;
         padding-bottom: 6%;
     }
+    
     .servicesSectionContainer {
         display: grid;
         grid-template: 
@@ -1058,6 +1081,7 @@ a {
         background-image: url("./assets/CoreyMobile.png");
         object-fit: contain;
         height: 100vh; 
+        background-size: 100%;
 
     }
     .bioContainer {
@@ -1067,7 +1091,7 @@ a {
     }
     
     .bioSection {
-        top: -12vh;
+        top: 4vh;
     }
 
     .nameContainer {
@@ -1083,6 +1107,7 @@ a {
 
     .servicesSection1 {
         margin: 8%;
+        height: 85%;
     }
 
     .servicesSectionContainer {
