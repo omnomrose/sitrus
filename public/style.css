@@ -1,7 +1,7 @@
 /* IMPORTS & GLOBAL STYLES */
 
 @import url('https://fonts.cdnfonts.com/css/akira-expanded');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 @import url("https://use.typekit.net/rmi2rkj.css");
 
 body {
@@ -431,6 +431,80 @@ hr{
     color: white;
     font-size: 24px;
     width: 1160px;
+}
+
+/* FOOTER */
+.footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 15vh;
+    background-color: black;
+    border-top: solid 2px #FF9505;
+}
+
+.footerContent {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+.footerLogo {
+    display: flex;
+    justify-content: left;
+    margin-left: 5%;
+    padding-top: 1%;
+}
+
+.footerBrand {
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 40px;
+    color: white;
+    padding: 0% 5% 0% 2%;
+    margin-left: 10%;
+}
+
+.footerBrand:hover {
+    color: #FF9505;
+}
+
+.copyright{
+    font-family: 'Poppins';
+    font-size: 12px;
+    color: white;
+}
+
+.links{
+    display: flex;
+    padding-left: 10%;
+    gap: 10%;
+    width: 50%;
+}
+
+.footLink {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.footLink:hover {
+    color: #FF9505;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.policy{
+    font-family: 'Poppins';
+    font-size: 12px;
+    color: white;
+    display: flex;
+    justify-content: right;
+    padding-left: 4%;
 }
 
 /* DESKTOP - SMALLER SCREEN SIZE */
