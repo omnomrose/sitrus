@@ -322,7 +322,7 @@ a {
     color: white;
     font-size: 24px;
     padding: 10px 0px 0px 0px;
-    width: 85%;
+    width: 55%;
     margin: auto;
 }
 
@@ -451,11 +451,10 @@ a {
 .teamBioBottom {
     color: black;
     padding: 4px 24px 24px 24px;
-    width: 90%;
+    width: 80%;
     font-family: 'Poppins';
     font-weight: light;
     font-size: 14px;
-    width: 363px;
 }
 
 .sectionSpacer1 {
@@ -602,12 +601,17 @@ a {
       }
       .teamSubTitle {
         font-size: clamp(18px, 2vw, 24px);
+        width: 85%;
       }
       .teamContainer {
-        gap: 10vh;
+        height: 190vh;
+        gap: 20vh;
       }
       .teamCards {
         margin-bottom: 20vh;
+      }
+      .teamBioBottom {
+        width: 80%;
       }
 }
 
