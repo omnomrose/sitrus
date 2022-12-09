@@ -114,7 +114,7 @@ body {
     font-family: 'Akira Expanded', sans-serif;
     -webkit-transition: color 0.3s, font-size 0.3s;
     transition: color 0.3s, font-size 0.3s;
-    font-size: 16px;
+    font-size: clamp(12px, 1vw, 16px);
 }
 
 .navLink:hover {
@@ -146,9 +146,8 @@ a {
     "a b" 100%
     ;
     width: 100vw;
-    grid-auto-columns: minmax(0, 1fr);
-    grid-auto-flow: column;
     height: 85vh;
+    
 }
 
 .firstSectionImage {
@@ -178,19 +177,19 @@ a {
 
 .solutionsTitle {
     font-family: 'Akira Expanded';
-    font-size: 40px;
+    font-size: clamp(20px, 3vw, 40px);
 }
 
 .solutionsSubTitle {
     font-family: 'Poppins';
-    font-size: 40px;
+    font-size: clamp(20px, 3vw, 40px);;
 }
 
 .solutionsBodyText {
     width: 30vw;
     font-family: 'Poppins';
-    font-size: 24px;
-    padding: 74px 0px 64px 0px;
+    font-size: clamp(16px, 1vw, 24px);
+    padding: 7vh 0px 64px 0px;
 }
 
 .button1 {
@@ -242,22 +241,47 @@ a {
     width: 100vw;
     height: 30vh;
     background-color: white;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template:
+    "a1 a1 a1 a1 a1" 15vh
+    "b1 c1 d1 e1 f1" 10vh
+    ;
+    justify-content: center;
     align-items: center;
 }
 
 .trustedByTitle {
     font-family: 'Akira Expanded';
-    font-size: 32px;
-    padding: 9vh 0px 0px 0px;
+    grid-area: a1;
+    text-align: center;
+    font-size: clamp(20px, 2vw, 32px);
+    letter-spacing: 3px;
+}
+
+.apple{
+    grid-area: b1;
+}
+
+.microsoft{
+    grid-area: c1;
+}
+
+.amazon{
+    grid-area: d1;
+}
+
+.google{
+    grid-area: e1;
+}
+
+.meta{
+    grid-area: f1;
 }
 
 .trustedImages {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-   /* justify-content: space-evenly;*/
     height: 100%;
     padding: 51px 0px 0px 0px;
 
@@ -279,7 +303,8 @@ a {
 }
 
 .trustedLogo {
-    padding: 0px 50px 0px 50px;   
+    padding: 0px 50px 0px 50px;
+    width: 65%;   
 }
 
 .teamTitle {
@@ -455,14 +480,14 @@ hr{
 .uniqueHeader{
     font-family: 'Akira Expanded';
     color: white;
-    font-size: 40px;
+    font-size: clamp(24px, 3vw, 40px);
     padding: 40px 0px 0px 0px;
 }
 .uniqueDesc{
     font-family: 'Poppins';
     color: white;
-    font-size: 24px;
-    width: 1300px;
+    font-size: clamp(16px, 1vw, 22px);
+    width: 60%;
     padding-bottom: 24px;
 }
 
@@ -548,30 +573,42 @@ a {
 
 /* DESKTOP - SMALLER SCREEN SIZE */
 
-@media only screen and (max-width: 1600px) {
-    .headerContent {
+@media only screen and (max-width: 1136px) {
+    .firstSection {
+        grid-template: 
+        "b" 100%
+        "a" 100%
+        ;
+        height: unset;
+        align-items: center;
+        justify-content: center;
+      }
+      .solutionsContainer {
         width: 100vw;
-    }
-    .logo {
-        padding-left: 10%;
-    }
-    .designImage {
-        padding-top: 10vh;
-        padding-left: 12vw;
-    }
-    .solutionsBodyText {
-        font-size: 20px;
-        padding-top: 44px;
-        padding: 44px 0px 34px 0px;
-    }
-    .solutionsTitle {
-        font-size: 40px;
-    }
-    
-    .solutionsSubTitle {
-        font-size: 40px;
-    }
-
+        align-items: center;
+        padding: 10vh;
+      }
+      .solutionsBodyText {
+        width: 43vw;
+      }
+      .firstSectionContent {
+        grid-column: unset;
+      }
+      .firstSectionImage {
+        grid-column: unset;
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(0deg, white 50%, black 50%);
+      }
+      .teamSubTitle {
+        font-size: clamp(18px, 2vw, 24px);
+      }
+      .teamContainer {
+        gap: 10vh;
+      }
+      .teamCards {
+        margin-bottom: 20vh;
+      }
 }
 
 @media only screen and (max-width: 1000px) {  
