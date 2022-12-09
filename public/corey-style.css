@@ -825,7 +825,7 @@ a {
         width: 50vw;
         background: none;
         gap: 40px;
-        padding: 20vh 0 0 0;
+        padding: 50vh 0 0 0;
         justify-content: center;
         position: relative;
         grid-auto-columns: minmax(0, 1fr);
@@ -940,8 +940,8 @@ a {
         "a2 a2" 10vh
         "b2 b2" 45vh
         "c2 c2" auto
-        "d2 e2" 20vh
-        "f2 g2" 20vh
+        "d2 e2" auto
+        "f2 g2" auto
         ;
         gap: 10px;
         grid-auto-columns: minmax(0, 1fr);
@@ -1031,6 +1031,27 @@ a {
     }
     .sectionSpacer4 {
         display: none;
+    }
+
+    
+    .webDevImageCard {
+        display: none;
+    }
+
+    .mobileButtons {
+        display: block;
+    }
+
+    .mobileButtons button {
+        width: 100%;
+        font-size: 12px;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        font-family: 'akira expanded';
+        letter-spacing: 3px;
+        box-shadow: 5px 5px 5px black;
+        background-color: white;
     }
 
 
@@ -1183,9 +1204,6 @@ a {
         gap: 40px;
     }
 
-    .webDevImageCard {
-        display: none;
-    }
 
     .webDevDescription {
         padding: 2.5vw 3vw 2.5vw 3vw;
