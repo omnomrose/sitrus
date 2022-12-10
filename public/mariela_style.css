@@ -438,6 +438,7 @@ span.line {
     margin-bottom: 5%;
     color: white;
     text-align: center;
+    border: 3px solid white;
 }
 
 .hobbiesSubheader{
@@ -454,7 +455,8 @@ span.line {
 
 .mangaImg{
     grid-area: w;
-    border: 3px solid white;
+    border: 3px white;
+    border-style: solid solid solid none;
     overflow: scroll;
     background-color: white;
 }
@@ -465,19 +467,16 @@ span.line {
 
 .mangaText{
     grid-area: w1;
-    border: 3px solid white;
-    background-color: black;
 }
 
 .showsText{
     grid-area: x;
-    border: 3px solid white;
-    background-color: black;
 }
 
 .showsImg{
     grid-area: x1;
-    border: 3px solid white;
+    border: 3px white;
+    border-style: solid none solid solid;
     background-color: black;
     overflow: scroll;
 }
@@ -488,7 +487,8 @@ span.line {
 
 .exploringImg{
     grid-area: y;
-    border: 3px solid white;
+    border: 3px white;
+    border-style: solid solid solid none;
     overflow: scroll;
     background-color: #BCAAA1;
 }
@@ -499,19 +499,16 @@ span.line {
 
 .exploringText{
     grid-area: y1;
-    border: 3px solid white;
-    background-color: black;
 }
 
 .musicText{
     grid-area: z;
-    border: 3px solid white;
-    background-color: black;
 }
 
 .playlist{
     grid-area: z1;
-    border: 3px solid white;
+    border: 3px white;
+    border-style: solid none solid solid;
 }
 
 .musicPlaylist{
@@ -740,6 +737,22 @@ a {
         "z1" 25vh
         "z" 25vh
         ;
+    }
+
+    .mangaImg{
+        border-style: solid none solid none;
+    }
+
+    .showsImg{
+        border-style: solid none solid none;
+    }
+
+    .exploringImg{
+        border-style: solid none solid none;
+    }
+
+    .playlist{
+        border-style: solid none solid none;
     }
 
     /*FOOTER*/
