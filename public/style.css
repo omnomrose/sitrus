@@ -411,6 +411,12 @@ a {
     transform: scale(1.05);
 }
 
+#marielaImage {
+    height: 58vh;
+    object-fit: cover;
+    background-color: #FF9505;
+}
+
 .rose {
     grid-area: e;
     background-color: #FF9505;
